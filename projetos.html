@@ -20,6 +20,7 @@
     margin-bottom: 20px;
     font-size: 2rem;
     text-align: center;
+    color: #50fa79;
   }
 
   .carousel {
@@ -27,45 +28,40 @@
     max-width: 600px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 10px rgb(0,0,0);
     position: relative;
   }
 
   .carousel-inner {
     display: flex;
-    width: 300%;
-    animation: slide 12s infinite;
+    animation: slide 8s infinite;
   }
 
   .carousel-item {
-    position: relative;
     flex: 1 0 100%;
   }
 
   .carousel-item img {
     width: 100%;
+    height: auto; /* Ajusta a altura automaticamente */
     display: block;
   }
 
   @keyframes slide {
-    0%, 20%   { transform: translateX(0%); }
-    33%, 53%  { transform: translateX(-100%); }
-    66%, 86%  { transform: translateX(-200%); }
+    0%, 45%   { transform: translateX(0%); }
+    50%, 95%  { transform: translateX(-100%); }
     100%      { transform: translateX(0%); }
   }
 </style>
 
-<h2>Meu Carrossel de Imagens</h2>
+<h2>Painel Web Campanha de Incentivo</h2>
 <div class="carousel">
   <div class="carousel-inner">
     <div class="carousel-item">
-      <img src="https://picsum.photos/id/1015/800/400" alt="Imagem 1">
+      <img src="https://i.ibb.co/N2NttR8s/tabela.png" alt="tabela" border="0">
     </div>
     <div class="carousel-item">
-      <img src="https://picsum.photos/id/1016/800/400" alt="Imagem 2">
-    </div>
-    <div class="carousel-item">
-      <img src="https://picsum.photos/id/1018/800/400" alt="Imagem 3">
+      <img src="https://i.ibb.co/qL35fyKf/ranking.png" alt="ranking" border="0">
     </div>
   </div>
 </div>
